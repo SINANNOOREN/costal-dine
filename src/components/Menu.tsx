@@ -12,7 +12,7 @@ interface MenuItem {
   featured?: boolean;
 }
 
-type MenuCategory = 'starters' | 'mains' | 'desserts' | 'drinks';
+type MenuCategory = 'starters' | 'mains' | 'desserts' ;
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState<MenuCategory>('starters');
@@ -99,40 +99,14 @@ const Menu = () => {
         price: "₹380",
       },
     ],
-    drinks: [
-      {
-        id: 1,
-        name: "Spiced Ginger Cooler",
-        description: "Refreshing ginger lemonade with a hint of spice",
-        price: "₹150",
-        featured: true,
-      },
-      {
-        id: 2,
-        name: "Tender Coconut Mojito",
-        description: "A tropical twist on the classic mojito with tender coconut water",
-        price: "₹180",
-      },
-      {
-        id: 3,
-        name: "Passion Fruit Iced Tea",
-        description: "Iced tea infused with tangy passion fruit for a refreshing sip",
-        price: "₹140",
-      },
-      {
-        id: 4,
-        name: "Classic Virgin Pina Colada",
-        description: "Creamy coconut and pineapple mocktail, served chilled",
-        price: "₹160",
-      },
-    ],
+ 
  
   
   };
 
   return (
     <section id="menu" className="section-padding bg-section-pattern">
-      <div className="container mx-auto">
+      <div className="container mx-auto ">
         <FadeIn className="text-center mb-16">
           <h3 className="section-subheading">Culinary Excellence</h3>
           <h2 className="section-heading">Our Menu</h2>
