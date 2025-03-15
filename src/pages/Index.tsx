@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import AnimationProvider from '@/components/ui/animation-provider';
@@ -53,7 +52,7 @@ const Index = () => {
         style={{ scaleX }}
       />
       
-      <div className="relative min-h-screen">
+      <div className="relative min-h-screen w-full overflow-x-hidden">
         <NavBar />
         <Hero />
         <Menu />

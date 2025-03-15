@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from "@/lib/utils";
@@ -115,9 +114,9 @@ const NavBar = () => {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white shadow-lg overflow-hidden"
+            className="md:hidden fixed top-[80px] left-0 right-0 bg-white shadow-lg overflow-hidden z-50"
           >
-            <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+            <div className="w-full px-4 py-4 flex flex-col space-y-4">
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link.name}
